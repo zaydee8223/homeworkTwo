@@ -1,7 +1,7 @@
 # Homework 2
 ## Weather Forecast API
 
-Web4 Link: 
+Web4 Link: https://in-info-web4.luddy.indianapolis.iu.edu/~zadomin/homeworkTwo/
 
 This week, our assignment was to provide weather data for specified cities or zip codes. The app retrieves data from the Weather API and displays current weather conditions and a 7-day forecast with additional details for each day. 
 The main goals of this assignment were: 
