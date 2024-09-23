@@ -1,0 +1,188 @@
+/* reset  */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html, body {
+ height: 100%;
+ background-color: #5bc4fb;
+}
+h1, h2, h3, h4, h5, h6, p {
+ margin-bottom: 16px
+}
+
+/* app */
+#app {
+    padding: 24px;
+}
+
+
+/* fonts */
+/* black */
+@font-face {
+    font-family: SFBlack;
+    src: url(../css/fonts/SF-Pro-Text-Black.otf);
+  }
+
+  /* regular */
+  @font-face {
+    font-family: SFRegular;
+    src: url(../css/fonts/SF-Pro-Text-Regular.otf);
+  }
+
+  /* rounded */
+  @font-face {
+    font-family: SFRounded;
+    src: url(../css/fonts/SF-Pro-Rounded-Ultralight.otf);
+  }
+
+  /* h1 */
+  h1 {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-family: SFBlack;
+}
+
+/* input + btn bar holder */
+.inputBtnBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* input bar */
+.inputBar {
+    margin-bottom: 20px;
+}
+
+/* input */
+input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 240px;
+    font-size: 16px;
+    font-family: SFRegular;
+    border: 1px solid #035681;
+}
+
+/* btns for login, sign up, get weather */
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:#d4cae2 ;
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: SFRegular;
+}
+
+/* holder for entire forecast section */
+.forecastHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* city name displayed  */
+.cityName {
+    text-align: center;
+    padding: 15px;
+    font-family: SFBlack;
+}
+
+/* current weather card */
+.currentWeather {
+    border: solid 4px #000;
+    padding: 10px;
+    font-size: 18px;
+    margin: 30px auto;
+    background-color: #035681;
+    text-align: center;
+    color: #ccc;
+    width: 300px;
+    font-family: SFRegular;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* h3 on current weather */
+h3 {
+font-size: 22px;
+color: #fff;
+font-family: SFBlack;
+}
+
+/* forecast cards */
+.forecast {
+    border: solid 4px #000;
+    padding: 10px;
+    margin: 10px;
+    background-color: #7e91c0;
+    width: 250px; 
+    flex: 0 1 auto; 
+    font-size: 16px;
+    font-family: SFRegular;
+    color: #fff;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* img for cards */
+.imgIcon {
+    margin-left: 170px;
+}
+/* date of weather */
+h4 {
+    color: #fff;
+    font-family: SFBlack;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* line separating btn and additional details */
+.details {
+    margin-top: 10px;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+}
+
+/* buttons for toggle more details */
+button.toggleDetails {
+    background-color: #035681;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 160px;
+    font-family: SFRegular;
+}
+
+
+/* hover effect for toggle btn */
+button.toggleDetails:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* media queries for forecast cards */
+@media (min-width: 768px) {
+    .forecastHolder {
+        justify-content: space-evenly;
+    }
+    .forecast {
+        flex: 0 1 calc(25% - 20px); 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .forecast {
+        flex: 0 1 calc(33.33% - 20px); 
+    }
+}

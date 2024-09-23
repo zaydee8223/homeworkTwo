@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Weather Forecast</h1>
+        <div class="inputBtnBar">
+            <div class="inputBar">
+                <input type="text" id="location" placeholder="Enter city, state, or zip code">
+                <button id="getWeather">Get Weather</button>
+            </div>
+            <div class="buttonBar">
+                <button id="login">Login</button>
+                <button id="signup">Sign Up</button>
+            </div>
+        </div>
+        <div class="forecastHolder"></div>
+       
+    </div>
+
+    <!-- script files -->
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="model/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+</body>
+</html>
